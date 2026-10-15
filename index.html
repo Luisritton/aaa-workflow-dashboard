@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AAA Workflow Dashboard | Monitor de IA</title>
+    <!-- Google Fonts: Inter -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Estilos Externos -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <!-- Cabeçalho Principal -->
+        <header class="header">
+         <h1>⚡ AAA Workflow Dashboard</h1>
+         <p>Painel de controle em tempo real para automações e agentes de inteligência artificial</p>
+        </header>
+
+        <!-- Barra de Controles e Filtros -->
+         <section class="card control-card">
+            <div class="action-bar">
+                <button id="btnCarregar" class="btn-primary">Carregar Fluxos de IA</button>
+                <span class="badge-count" id="contadorAutomacoes">Total: 0</span>
+            </div>
+
+            <div class="input-group">
+                <input type="text" id="campoBusca" placeholder="🔍 Filtrar automações por nome..." disabled>
+            </div>
+         </section>
+
+         <!-- Listagem Dinâmica -->
+          <section class="card list-card">
+            <h2>Automações Registradas</h2>
+            <div id="containerAutomacoes" class="automations-grid">
+                <p class="empty-state">Clique no botão acima para carregar os dados do servidor.</p>
+            </div>
+          </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
